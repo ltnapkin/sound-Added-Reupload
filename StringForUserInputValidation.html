@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<!--Travieon fields-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        /*Css style stuff to make the page look more flashy!*/
+        body{
+           
+            text-align: center;
+            background-color:firebrick;
+        }
+
+        h1{
+            
+            text-transform:uppercase;
+            text-shadow:inherit;
+            color:aliceblue;
+            font-size:70px;
+            font-family:'Ink Free';
+            outline-style:groove;
+            
+        }
+
+        button{
+            background-color:aliceblue;
+            border-top-color:darkgrey;
+        }
+
+        p{
+       
+         color:crimson;
+         background-color:black;
+         border:double red;
+        }
+
+        audio {
+            width: 200px;
+            height:15px;
+            border: 3px solid black;
+            border-radius: 50px;
+        }
+
+    </style>
+
+    <meta charset="utf-8" />
+    <!-----This is so i can use my javascript coding-->
+    <script src="UserInputValidation.js">    </script>
+    <!--This is the title of the tab of the pages-->
+    <title>FunClub</title>
+</head>
+<body id="body">
+    <!--A header so i can make the design of the page look better-->
+    <h1 id="skullT">&#128128 &#128128 &#128128 &#128128 &#128128 </h1>
+    <h1 id="welcome">Secret Club Invite  </h1>
+    <h1 id="skullB">&#8650 &#128128 &#128128 &#128128 &#8650 </h1>
+
+    <p id="results">Fill out the Form to Join</p>
+    <!--This is what i use to get the person input-->
+
+    <input id="userFirstName" type="text" placeholder="First Name Please!"> </input>
+    <input id="userLastName" type="text" placeholder="Last Name Please!"> </input>
+   <!--This is use for only numbers for input for the zipcode-->
+    <input id="userZipcode" type="number" placeholder="Zipcode Please"> </input>
+    <!--this is use to grab All input that is put into the code-->
+    <button id="checkApp" type="submit" onclick="checkIfBlank()">Submit Application</button>
+
+    <!--This is for the audio source it loops the track that is playing once play is hit-->
+    <audio controls  loop id="audioSound"><source src="lab_sounds.mp3" type="audio/mp3" /></audio>
+
+</body>
+</html>
